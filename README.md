@@ -2379,7 +2379,7 @@ The style guide purposely neglects to mention any formatting rules, as you shoul
   - [23.3](#jquery--queries) For DOM queries use Cascading `$('.sidebar ul')` or parent > child `$('.sidebar > ul')`. [jsPerf](http://jsperf.com/jquery-find-vs-context-sel/16)
 
   <a name="jquery--find"></a><a name="23.4"></a>
-  - [24.4](#jquery--find) Use `find` with scoped jQuery object queries.
+  - [23.4](#jquery--find) Use `find` with scoped jQuery object queries.
 
     ```javascript
     // bad
@@ -2429,7 +2429,7 @@ The style guide purposely neglects to mention any formatting rules, as you shoul
 1. [Modules](#modules)
 
   <a name="tc39-proposals"></a>
-  - [28.2](#tc39-proposals) Do not use [TC39 proposals](https://github.com/tc39/proposals) that have not reached stage 3.
+  - [25.2](#tc39-proposals) Do not use [TC39 proposals](https://github.com/tc39/proposals) that have not reached stage 3.
 
     > Why? [They are not finalized](https://tc39.github.io/process-document/), and they are subject to change or to be withdrawn entirely. We want to use JavaScript, and proposals are not JavaScript yet.
 
@@ -2441,7 +2441,7 @@ The style guide purposely neglects to mention any formatting rules, as you shoul
   contains utilities that are functionally broken but remain for legacy reasons.
 
   <a name="standard-library--isnan"></a>
-  - [29.1](#standard-library--isnan) Use `Number.isNaN` instead of global `isNaN`.
+  - [26.1](#standard-library--isnan) Use `Number.isNaN` instead of global `isNaN`.
     eslint: [`no-restricted-globals`](https://eslint.org/docs/rules/no-restricted-globals)
 
     > Why? The global `isNaN` coerces non-numbers to numbers, returning true for anything that coerces to NaN.
@@ -2458,7 +2458,7 @@ The style guide purposely neglects to mention any formatting rules, as you shoul
     ```
 
   <a name="standard-library--isfinite"></a>
-  - [29.2](#standard-library--isfinite) Use `Number.isFinite` instead of global `isFinite`.
+  - [26.2](#standard-library--isfinite) Use `Number.isFinite` instead of global `isFinite`.
     eslint: [`no-restricted-globals`](https://eslint.org/docs/rules/no-restricted-globals)
 
     > Why? The global `isFinite` coerces non-numbers to numbers, returning true for anything that coerces to a finite number.
@@ -2477,8 +2477,8 @@ The style guide purposely neglects to mention any formatting rules, as you shoul
 
 ## Testing
 
-  <a name="testing--yup"></a><a name="26.1"></a>
-  - [26.1](#testing--yup) **Yup.**
+  <a name="testing--yup"></a><a name="27.1"></a>
+  - [27.1](#testing--yup) **Yup.**
 
     ```javascript
     function foo() {
@@ -2486,8 +2486,8 @@ The style guide purposely neglects to mention any formatting rules, as you shoul
     }
     ```
 
-  <a name="testing--for-real"></a><a name="28.2"></a>
-  - [30.2](#testing--for-real) **No, but seriously**:
+  <a name="testing--for-real"></a><a name="27.2"></a>
+  - [27.2](#testing--for-real) **No, but seriously**:
     - Whichever testing framework you use, you should be writing tests!
     - Strive to write many small pure functions, and minimize where mutations occur.
     - Be cautious about stubs and mocks - they can make your tests more brittle.
