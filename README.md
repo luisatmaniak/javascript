@@ -1,4 +1,4 @@
-# MNK Style guide
+# MNK JavaScript Style guide
 
 The style guide purposely neglects to mention any formatting rules, as you should be using the following prettier configuration to avoid wasting time:
 
