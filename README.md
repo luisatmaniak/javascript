@@ -1,13 +1,13 @@
 # MNK JavaScript Style guide
 
-The style guide purposely neglects to mention any formatting rules, as you should be using the following prettier configuration to avoid wasting time:
+The style guide purposely neglects to mention any formatting rules, as you should be using the following `prettier`  configuration to avoid wasting time:
 
 ```json
 {
   "printWidth": 100,
-   "semi": false,
-   "singleQuote": true,
-   "trailingComma": "all"
+  "semi": false,
+  "singleQuote": true,
+  "trailingComma": "all"
 }
 ```
 
